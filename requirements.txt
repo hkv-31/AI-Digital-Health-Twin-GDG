@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+scikit-learn
+pytesseract
+Pillow
+google-generativeai
+requests
+python-dotenv
+fpdf
+joblib
+python-dotenv
+pdfplumber

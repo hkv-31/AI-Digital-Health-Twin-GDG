@@ -1,0 +1,90 @@
+{
+  "reference_metadata": {
+    "source": "WHO Clinical Guidelines and Cardiovascular Risk Charts",
+    "region": "South-East Asia / South Asia (India, etc.)",
+    "version": "1.0-GDG"
+  },
+  "diabetes_indicators": {
+    "fasting_glucose": {
+      "unit": "mg/dL",
+      "normal": [0, 125],
+      "diabetes_indicator": [126, 1000],
+      "source_citation": "WHO South-East Asia Diabetes Guide [cite: 234, 264]"
+    },
+    "random_plasma_glucose_rpg": {
+      "unit": "mg/dL",
+      "diabetes_indicator": [200, 1000],
+      "source_citation": "WHO South-East Asia Diabetes Guide [cite: 261]"
+    },
+    "hba1c": {
+      "unit": "percentage",
+      "normal": [0, 6.4],
+      "diabetes_indicator": [6.5, 25.0],
+      "source_citation": "WHO South-East Asia Diabetes Guide [cite: 266]"
+    }
+  },
+  "cardiovascular_risk_factors": {
+    "systolic_blood_pressure": {
+      "unit": "mmHg",
+      "ranges": [
+        {"label": "Optimal", "max": 120},
+        {"label": "Normal/Elevated", "min": 120, "max": 139},
+        {"label": "High", "min": 140, "max": 179},
+        {"label": "Very High", "min": 180, "max": 300}
+      ],
+      "source_citation": "WHO CVD Risk Laboratory-Based Charts "
+    },
+    "total_cholesterol": {
+      "unit": "mmol/l",
+      "note": "Laboratory-based charts use mmol/l for CVD risk assessment.",
+      "source_citation": "WHO CVD Risk Laboratory-Based Charts "
+    }
+  },
+  "cvd_10_year_risk_levels": {
+    "categories": [
+      {"label": "Low Risk", "range": "<5%", "color_code": "Green"},
+      {"label": "Moderate Risk", "range": "5% to <10%", "color_code": "Yellow"},
+      {"label": "High Risk", "range": "10% to <20%", "color_code": "Orange"},
+      {"label": "Very High Risk", "range": "20% to <30%", "color_code": "Red"},
+      {"label": "Critical Risk", "range": "≥30%", "color_code": "Dark Red"}
+    ],
+    "source_citation": "WHO CVD Risk Laboratory-Based Charts [cite: 492, 504]"
+  },
+  "hypertension_engine": {
+    "classification": {
+      "unit": "mmHg",
+      "normal": {"systolic": [0, 119], "diastolic": [0, 79]},
+      "elevated": {"systolic": [120, 129], "diastolic": [0, 79]},
+      "hypertension_stage_1": {"systolic": [130, 139], "diastolic": [80, 89]},
+      "hypertension_stage_2": {"systolic": [140, 179], "diastolic": [90, 119]},
+      "hypertensive_crisis": {"systolic": [180, 300], "diastolic": [120, 200]}
+    },
+    "diagnostic_rule": "Diagnosed if systolic >=140 or diastolic >=90 on two different days.",
+    "emergency_symptoms": [
+      "Severe headaches", "Chest pain", "Dizziness", "Difficulty breathing", 
+      "Nausea/Vomiting", "Blurred vision", "Anxiety", "Confusion", "Nosebleeds"
+    ]
+  },
+  "lipid_profile_standards": {
+    "ldl_cholesterol": {
+      "unit": "mg/dL",
+      "optimal": [0, 99],
+      "near_optimal": [100, 129],
+      "borderline_high": [130, 159],
+      "high": [160, 189],
+      "very_high": [190, 1000]
+    },
+    "hdl_cholesterol": {
+      "unit": "mg/dL",
+      "low": [0, 39],
+      "high_protective": [60, 200]
+    },
+    "triglycerides": {
+      "unit": "mg/dL",
+      "optimal": [0, 149],
+      "borderline_high": [150, 199],
+      "high": [200, 499],
+      "very_high": [500, 5000]
+    }
+  }
+}
