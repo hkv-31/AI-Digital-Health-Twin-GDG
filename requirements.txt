@@ -11,3 +11,4 @@ fpdf
 joblib
 python-dotenv
 pdfplumber
+matplotlib
